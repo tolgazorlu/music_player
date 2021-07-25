@@ -1,10 +1,15 @@
 # musicapps
 
-A new Flutter application.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone main branch
+2. conne
+3. enter cd /lib/core/node code to cmd
+4. npm start
+5. flutter run
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
