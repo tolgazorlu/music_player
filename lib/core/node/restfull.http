@@ -1,0 +1,58 @@
+@BASE_URL = http://localhost:3000/
+
+//for users
+
+POST {{BASE_URL}}user
+Content-Type: application/json
+
+{
+    "user_name":"namık",
+    "user_surname":"kmal",
+    "user_email":"nmk@gmail.com",
+    "user_password":"123456"
+   // "user_fotoURL":"null",
+ ///   "user_rooms_id":null
+}
+
+###
+GET {{BASE_URL}}musics
+
+###
+POST {{BASE_URL}}musics
+Content-Type: application/json
+
+{
+    "music_name":"Love Is A Miracle",
+    "music_authors":"Jinco",
+    "music_image_url":"https://firebasestorage.googleapis.com/v0/b/musicplayer-7876f.appspot.com/o/images%2Flove%20is%20a%20miracle.jpg?alt=media&token=bc4edd09-8005-417e-a0ca-448cd6507fd1",
+    "music_file_url":"https://firebasestorage.googleapis.com/v0/b/musicplayer-7876f.appspot.com/o/music%2Fjinco%20love%20is%20a%20miracle.mp3?alt=media&token=e4c635fe-439d-4c92-8c91-653068338b0b",
+    "music_album":"Single"
+}
+
+###
+GET {{BASE_URL}}user/60fae580aeb8c82e6075dda6
+
+
+###
+//delete user
+DELETE {{BASE_URL}}user/60fae596aeb8c82e6075dda9
+
+//update
+###
+PATCH {{BASE_URL}}user/60fae580aeb8c82e6075dda7
+Content-Type: application/json
+
+{
+    "user_name":"aliş"
+}
+
+
+//login 
+###
+POST {{BASE_URL}}user/login
+Content-Type: application/json
+
+{
+    "user_email":"baaeytullah.topuz37@gmail.com",
+    "user_password":"123456"
+}
