@@ -4,7 +4,6 @@
 ## Getting Started
 
 1. Clone main branch
-2. conne
 3. enter cd /lib/core/node code to cmd
 4. npm start
 5. flutter run
